@@ -1,6 +1,7 @@
 # TIL
 Today I Learned..
 
+## 나의 각오
 Importance of Capitalize
 feat : 기능개발
 fix : 오류개선
