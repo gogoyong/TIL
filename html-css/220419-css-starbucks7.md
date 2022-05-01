@@ -128,7 +128,7 @@ div .orange{
 </ul>
 ```
 ```css
-.orange + li {
+.orange ~ li {
   color: red;
 }
 ```
