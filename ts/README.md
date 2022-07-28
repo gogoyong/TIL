@@ -36,4 +36,25 @@ type SuperPrint = {
 }
 ```
 
+## generic 사용 시 placeholder는 call signature를 요구하는 대로 생성함 (타입 추론)
+```ts
+type SuperPrint <T,M>(a: T[], b:M) => T
 
+const superPrint: SuperPrint = (a) => a[0]
+
+const a = superPrint([1,2,3,4], "x")
+```
+
+- 라이브러리를 만들거나, 다른 개발자가 사용할 기능을 개발하는 경우 제네릭이 유용
+- 그 외 대부분의 경우 제네릭을 만들기보다는 사용하는게 대부분임.
+
+type으로 선언한 부분을 아래와 같이도 표시할 수 있음.(같은 결과)
+```ts
+function superPrint<T>(a: T[]) {
+ return a[0]
+}
+```
+
+제네릭을 사용하여 타입을 생성하고 타입 안에 그것을 넣어줄 때도 사용할 수 있음
+number[] 을 Array<number> 과 같이 사용할 수도 있음.
+ 
