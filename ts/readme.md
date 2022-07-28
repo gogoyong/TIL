@@ -24,3 +24,16 @@ const add:Add = (a, b) => a + b
 ## overloading
 - 함수가 여러 개의 call signature을 가지고 있을 경우 발생
 
+## polymorphism
+many(poly) structures(morphism)  
+- 우리가 코드를 작성하고, 함수를 구현하고 사용할 때는 concrete type을 사용해야 함  
+(ex. boolean, string, number .. )
+
+- call signature 작성 시 concrete type을 알 수 없을 때 `generic`을 사용함  
+```ts
+type SuperPrint = {
+ <TypePlaceholder>(arr: TypePlaceholder[]) : TypePlaceHolder
+}
+```
+
+
