@@ -13,3 +13,14 @@
  이와 같이 설정한다.
  
  
+## Call signatures
+- type을 만들 수 있고, 함수를 구현하기 전에, 함수가 어떻게 작동하는지 서술해둘 수 있음.
+즉, 파라미터와 함수의 타입을 지정해두는 것임.
+```ts
+type Add = (a:number, b:number) => number;
+
+const add:Add = (a, b) => a + b
+```
+## overloading
+- 함수가 여러 개의 call signature을 가지고 있을 경우 발생
+
