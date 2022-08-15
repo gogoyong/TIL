@@ -3,6 +3,7 @@
 
 [JS](https://github.com/gogoyong/TIL/edit/main/js/README.md)  
 [TS](https://github.com/gogoyong/TIL/edit/main/ts/README.md)
+[git](https://github.com/gogoyong/TIL/edit/main/git/README.md)
 
 <!-- ## commit 말머리
 feat : 기능개발  
